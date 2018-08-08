@@ -9,7 +9,7 @@
 module SettingsAws
   NAME_VAGRANT = "JNCC-PROD-JENKINS-ANSIBLE"
   AWS_KEY_PEMNAME = "jncc-prod-jenkins"
-  AWS_KEY_PEMPATH = "jncc-prod-jenkins.pem"
+  AWS_KEY_PEMPATH = "/home/vagrant/keys/jncc-prod-jenkins.pem"
   AWS_UBUNTU_AMI = "ami-394f4b40"
   AWS_REGION = "eu-west-1"
   AWS_TYPE_INS = "t2.micro"
