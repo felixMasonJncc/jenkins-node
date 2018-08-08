@@ -31,9 +31,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         aws.region_config AWS_REGION, :ami => AWS_UBUNTU_AMI
         aws.instance_type = AWS_TYPE_INS
         aws.security_groups = [SECURITY_GROUPS]
+        aws.iam_instance_profile_arn = AWS_IAM_ROLE_ARN
         aws.tags = {
           'Name' => NAME_VAGRANT,
-          'Project' => 'development'
+          'Project' => 'development',
           'TechOwner' => 'ulric.wilson@jncc.gov.uk'
         }
 
