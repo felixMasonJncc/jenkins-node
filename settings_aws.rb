@@ -17,7 +17,7 @@ module SettingsAws
   AWS_DEVICE_NAME = "/dev/sda1"
   AWS_DEVICE_VOL_TYPE = "gp2"
   AWS_IAM_ROLE_ARN = "arn:aws:iam::914910572686:instance-profile/jncc-build-agent"
-  SECURITY_GROUPS = "jncc-peterborough-ssh-access"  
+  SECURITY_GROUPS = "jncc-peterborough-ssh-access, vagrant-conrolled"  
   #ELASTIC_IP = '54.229.121.61'
   #ELASTIC_IP_GEONODE_STAGE = '54.229.121.61'
   #ELASTIC_IP_GEONODE_SHOW = '52.214.128.195'
