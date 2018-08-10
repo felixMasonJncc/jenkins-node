@@ -21,6 +21,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
         config.vm.box = NAME_VAGRANT
         config.vm.box_url = "https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box"
+        
+        config.cache.enable_nfs = false
 
         # AWS Credentials:
         aws.keypair_name = AWS_KEY_PEMNAME
@@ -30,7 +32,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         aws.region = AWS_REGION
         aws.region_config AWS_REGION, :ami => AWS_UBUNTU_AMI
         aws.instance_type = AWS_TYPE_INS
-        aws.security_groups = [SECURITY_GROUPS]
+        aws.security_groups = SECURITY_GROUPS
         aws.iam_instance_profile_arn = AWS_IAM_ROLE_ARN
         aws.tags = {
           'Name' => NAME_VAGRANT,
