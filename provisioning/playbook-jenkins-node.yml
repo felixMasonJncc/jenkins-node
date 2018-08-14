@@ -1,6 +1,6 @@
 ---
 
-- hosts: default
+- hosts: jenkinsnode
   gather_facts: false
   sudo: yes
   roles:
