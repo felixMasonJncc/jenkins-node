@@ -1,5 +1,7 @@
 ---
 
 - hosts: default
+  gather_facts: false
+  sudo: yes
   roles:
     - docker
